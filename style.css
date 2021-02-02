@@ -295,43 +295,11 @@ html {
     width: 100%;
 }*/
 
-.yellow_bar {
-    position: absolute;
-    background: #e5d3c9;
-    height: 80px;
-    bottom: -40px;
-    right: 0;
-    width: 80%;
-    color: #2e3b48;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.yellow_bar img {
-    margin: 0 40px;
-
-}
-
-.yellow_bar p {
-    margin-right: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 /* Services Media Quieres */
 
 @media screen and (max-width: 768px) {
     .services_grid {
         grid-template-columns: 1fr;
-    }
-
-    .macbook {
-        display: none;
-    }
-    .yellow_bar {
-        width: 100%;
-        justify-content: flex-start;
     }
 }
 
@@ -363,13 +331,6 @@ html {
         margin-right: 16px;
     }
 
-    .yellow_bar img {
-        margin: 0 20px;
-    }
-
-    .yellow_bar p {
-        margin-right: 20px;
-    }
 }
 
 /*portfolio css*/
@@ -443,6 +404,7 @@ html {
 
 .portfolio_one {
     position: relative;
+    width: 80%;
 }
 
 .text-block-workone {
@@ -457,6 +419,7 @@ html {
 
 .portfolio_two {
     position: relative;
+    width: 20%;
 }
 
 .text-block-worktwo{
