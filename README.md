@@ -33,4 +33,3 @@
 
 ## Screenshot of Webpage
 
-![Screenshot of Webpage] (Assets/screencapture-usethehill-github-io-portfolio-css-2021-02-03-10_50_12.png)
