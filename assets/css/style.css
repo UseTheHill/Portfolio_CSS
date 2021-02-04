@@ -326,6 +326,7 @@ html {
 }
 
 .portfolio_one {
+    flex-direction: column;
     position: relative;
     width: 80%;
 }
