@@ -44,26 +44,6 @@ html {
     font-weight: 700;
 }
 
-/*Nav Media Queries*/
-
-@media screen and (max-width:768) {
-    .nav_container {
-        padding: 60px 24px;
-        grid-template-columns: 1fr 1fr;
-
-    }
-    .nav_right {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 468px) {
-    .nav_right {
-        padding: 0 16px;
-    }
-}
-
-
 /*About Sectio*/
 .main_section {
     padding: 60px 60px;
@@ -123,40 +103,6 @@ html {
     height: 610px;
     border-radius: 20px;
     box-shadow: 0 0 2em #e5d3c9;
-}
-/*Media Queries for about section*/
-
-@media screen and (max-width: 768px) {
-    .main_section {
-        padding: 30px;
-    }
-
-    .main_content {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    .main_image {
-        flex-direction: column;
-        margin-top: 40px;
-        flex-shrink: 2;
-    }
-
-    .main_container h1 {
-        font-size: 70px;
-    }
-
-}
-
-@media screen and (max-width: 468px) {
-    .main_text h2 {
-        font-size: 32px;
-    }
-
-    .main_img {
-        width: 100%;
-        height: 100%;
-    }
 }
 
 /*Approach CSS */
@@ -226,48 +172,6 @@ html {
 .approach_desc p {
     line-height: 2;
     font-size: 1.5rem;
-}
-
-/* Approach Media Quieres */
-
-@media screen and (max-width: 768px) {
-    .approach_grid {
-        grid-template-columns: 1fr;
-    }
-    .approach_container h1 {
-        text-align: center;
-        margin-bottom: 80px;
-    }
-}
-
-@media screen and (max-width: 468px) {
-    .approach_container {
-        padding-top: 100px;
-        padding-bottom: 200px;
-        padding-left: 16px;
-    }
-
-    .approach_grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 900px;
-    }
-
-    .approach_container h1 {
-        text-align: center;
-        margin-bottom: 160px;
-    }
-    .approach_left {
-        padding: 0 24px;
-    }
-
-    .approach_content {
-     margin-top: 40px;   
-    }
-
-    .approach_content img {
-        margin-right: 16px;
-    }
-
 }
 
 /*portfolio css*/
@@ -367,51 +271,6 @@ html {
     box-shadow: 0 0 10rem #e5d3c9;
 }
 
-/*Portfolio Media Queries*/
-
-@media screen and (max-width: 1368px) {
-    .portfolio_projects {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .portfolio {
-        padding: 30px;
-    }
-    .portfolio_container h1 {
-        font-size: 70px;
-    }
-
-    .portfolio_main {
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio_container {
-        padding-left: 0px;
-    }
-    .portfolio_right {
-        margin-bottom: 60px;
-    }
-    .text-block-workone {
-        display: none;
-    }
-
-    .text-block-worktwo {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 468px) {
-    .portfolio {
-        padding: 10px;
-    }
-    .portfolio_container h1 {
-        font-size: 40px;
-    }
-}
-
 /*Contact CSS*/
 
 .contact {
@@ -456,9 +315,88 @@ html {
     height: 50px !important;
 }
 
-/*Contact Media Queries*/
 
-@media screen and (max-width: 768px) {
+/* Media Queries*/
+
+ /* Media Queries for Portfolio*/
+@media screen and (max-width: 1368) {
+    .portfolio_projects {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768) {
+
+    /*Nav Media Queries*/
+    .nav_container {
+        padding: 60px 24px;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .nav_right {
+        flex-direction: column;
+    }
+
+/*Media Queries for about section*/
+    .main_section {
+        padding: 30px;
+    }
+
+    .main_content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .main_image {
+        flex-direction: column;
+        margin-top: 40px;
+        flex-shrink: 2;
+    }
+
+    .main_container h1 {
+        font-size: 70px;
+    }
+
+    /* Media Queries for Approach Section*/
+
+    .approach_grid {
+        grid-template-columns: 1fr;
+    }
+    .approach_container h1 {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    /* Media Queries for Portfolio section */
+    
+
+    .portfolio {
+        padding: 30px;
+    }
+
+    .portfolio_container h1 {
+        font-size: 70px;
+    }
+
+    .portfolio_main {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio_container {
+        padding-left: 0px;
+    }
+    .portfolio_right {
+        margin-bottom: 60px;
+    }
+    .text-block-workone {
+        display: none;
+    }
+
+    .text-block-worktwo {
+        display: none;
+    }
+
+    /*Media Queries Contact section*/
+
     .contact {
         flex-direction: column;
     }
@@ -485,5 +423,64 @@ html {
         margin-top: 32px;
         font-size: 32px;
     }
+
 }
 
+@media screen and (max-width: 468px) {
+
+    /* Media Queries for Nav Section*/
+    .nav_right {
+        padding: 0 16px;
+    }
+
+    
+
+}
+@media screen and (max-width: 468px) {
+    /*Media Queries for about section*/
+    .main_text h2 {
+        font-size: 32px;
+    }
+
+    .main_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Media Queries for approach section*/
+    .approach_container {
+        padding-top: 100px;
+        padding-bottom: 200px;
+        padding-left: 16px;
+    }
+
+    .approach_grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 900px;
+    }
+
+    .approach_container h1 {
+        text-align: center;
+        margin-bottom: 160px;
+    }
+    .approach_left {
+        padding: 0 24px;
+    }
+
+    .approach_content {
+     margin-top: 40px;   
+    }
+
+    .approach_content img {
+        margin-right: 16px;
+    }
+
+    /* Portfolio Media Queries*/
+    .portfolio {
+        padding: 10px;
+    }
+    .portfolio_container h1 {
+        font-size: 40px;
+    }
+
+}
