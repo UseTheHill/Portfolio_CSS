@@ -4,6 +4,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -331,7 +332,7 @@ html {
     left: 20px;
     background-color: #e5d3c9;
     color: #2e3b48;
-    padding:50px;
+    padding:20px;
     border-radius: 10px;
 }
 
@@ -346,30 +347,20 @@ html {
     left: 20px;
     background-color: #e5d3c9;
     color: #2e3b48;
-    padding: 50px;
+    padding: 20px;
     border-radius: 10px;
 }
-
-.portfolio_one a:hover {
-    box-shadow: 0 0 5rem #e5d3c9;
-    border: none;
-}
-
 
 .portfolio_projects img {
     padding: 0 8px;
     width:100%;
     height: 100%;
-}
-/*no idea what to do here
-.portfolio_img_one {
-    flex-grow: 2;
+    border-radius: 10px;
 }
 
-.portfolio_img_two {
-    flex-shrink: 1;
-}*/
-
+.portfolio_projects img:hover {
+    box-shadow: 0 0 10rem #e5d3c9;
+}
 
 /*Portfolio Media Queries*/
 
@@ -436,12 +427,12 @@ html {
 }
 
 .contact_bar img {
-    margin-right: 40px;
+    margin-right: 20px;
 
 }
 
 .contact_bar p {
-    margin-right: 40px;
+    margin-right: 20px;
     font-weight: 700;
 }
 
