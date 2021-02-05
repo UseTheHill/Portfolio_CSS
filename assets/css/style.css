@@ -13,10 +13,14 @@ html {
 .nav {
     background: #2e3b48;
     color: #e5d3c9;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 .nav_container {
-    padding: 60px;
+    padding-top: 60px;
+    padding-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -64,6 +68,9 @@ html {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #e5d3c9;
     margin-bottom: 32px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 .main_content {
@@ -80,6 +87,7 @@ html {
 .main_text h2 {
     font-size: 48px;
     line-height: 1.5;
+    padding-top: 0px;
     margin-bottom: 32px;
     text-align:center;
 }
@@ -184,7 +192,7 @@ html {
 .portfolio_container {
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 60px;
+ 
 }
 
 .portfolio_container h1 {
@@ -194,6 +202,7 @@ html {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #e5d3c9;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .portfolio_main {
@@ -223,17 +232,24 @@ html {
 
 .portfolio_projects {
     display: flex;
+    flex-direction: column;
     flex-direction: row;
     justify-content: center;
-    padding: 32px 64px;
-    
+   
+    width: 100%;
+    position: relative;
 }
+
+
 
 .portfolio_one {
     flex-direction: column;
     position: relative;
-    width: 80%;
-}
+    width: 100%;
+}/*
+.portfolio_one img:hover {
+    flex-grow: 3;
+}*/
 
 .text-block-workone {
     position: absolute;
@@ -247,7 +263,6 @@ html {
 
 .portfolio_two {
     position: relative;
-    width: 20%;
 }
 
 .text-block-worktwo{
@@ -266,10 +281,13 @@ html {
     height: 100%;
     border-radius: 10px;
 }
-
-.portfolio_projects img:hover {
-    box-shadow: 0 0 10rem #e5d3c9;
+.portfolio_one:hover {
+    flex-grow: 4.3;
 }
+/*
+.portfolio_projects img:hover {
+    
+}*/
 
 /*Contact CSS*/
 
