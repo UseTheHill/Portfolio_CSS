@@ -54,35 +54,7 @@ html {
 
 }
 
-/*Nav Media Queries*/
 
-@media screen and (max-width:768) {
-
-    .nav_container {
-
-        padding: 60px 24px;
-
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-    .nav_right {
-
-        flex-direction: column;
-
-    }
-
-}
-
-@media screen and (max-width: 468px) {
-
-    .nav_right {
-
-        padding: 0 16px;
-
-    }
-
-}
 
 /*About Sectio*/
 
@@ -117,15 +89,11 @@ html {
 .main_content {
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     grid-template-rows: 700px;
-
 }
 
 .main_text {
-
     padding-right: 20px;
 
 }
@@ -133,11 +101,8 @@ html {
 .main_text h2 {
 
     font-size: 48px;
-
     line-height: 1.5;
-
     margin-bottom: 32px;
-
     text-align:center;
 
 }
@@ -151,7 +116,6 @@ html {
 .main_text a {
 
     color: #e5d3c9;
-
     text-align: center;
 
 }
@@ -159,76 +123,16 @@ html {
 .main_image {
 
     display: flex;
-
     justify-content: center;
-
-    
 
 }
 
 .main_img {
 
     width: 420px;
-
     height: 610px;
-
     border-radius: 20px;
-
     box-shadow: 0 0 2em #e5d3c9;
-
-}
-
-/*Media Queries for about section*/
-
-@media screen and (max-width: 768px) {
-
-    .main_section {
-
-        padding: 30px;
-
-    }
-
-    .main_content {
-
-        grid-template-columns: 1fr;
-
-        grid-template-rows: 1fr;
-
-    }
-
-    .main_image {
-
-        flex-direction: column;
-
-        margin-top: 40px;
-
-        flex-shrink: 2;
-
-    }
-
-    .main_container h1 {
-
-        font-size: 70px;
-
-    }
-
-}
-
-@media screen and (max-width: 468px) {
-
-    .main_text h2 {
-
-        font-size: 32px;
-
-    }
-
-    .main_img {
-
-        width: 100%;
-
-        height: 100%;
-
-    }
 
 }
 
@@ -763,3 +667,77 @@ html {
     }
 
 }
+/*------------------------------------------------- */
+/*Nav Media Queries*/
+
+@media screen and (max-width:768) {
+
+    .nav_container {
+        padding: 60px 24px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nav_right {
+        flex-direction: column;
+    }
+
+    /*About Section Media Queries*/
+    .main_section {
+        padding: 30px;
+    }
+
+    .main_content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .main_image {
+        flex-direction: column;
+        margin-top: 40px;
+        flex-shrink: 2;
+    }
+
+    .main_container h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+
+    .nav_right {
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    /*About Section Media Queries*/
+
+    .main_section {
+        background-color: #2e3b48;
+        width: 100%;
+    }    
+    .main_container h1 {
+        margin-top: 30px;
+        font-size: 4rem;
+    }
+    .main_text h2 {
+        font-size: 2rem;
+    }
+    .main_text p {
+        
+        padding: 0;
+        margin: 0;
+    }
+
+    .main_content {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main_img {
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
