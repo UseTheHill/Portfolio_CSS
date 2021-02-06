@@ -33,4 +33,4 @@
 
 ## Screenshot of Webpage
 
-![img](assets/images/portfolio_css_screengrab.png)
+![img](assets/images/screenshot_deployed_page.png)
