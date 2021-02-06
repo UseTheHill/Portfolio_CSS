@@ -232,21 +232,20 @@ html {
 
 .portfolio_projects {
     display: flex;
-    flex-direction: column;
     flex-direction: row;
     justify-content: center;
-   
-    width: 100%;
     position: relative;
+    max-width: 100%;
 }
 
 
-
+/*
 .portfolio_one {
     flex-direction: column;
     position: relative;
     width: 100%;
-}/*
+}*/
+/*
 .portfolio_one img:hover {
     flex-grow: 3;
 }*/
@@ -274,15 +273,15 @@ html {
     padding: 20px;
     border-radius: 10px;
 }
-
+/*
 .portfolio_projects img {
     padding: 0 8px;
-    width:100%;
+    width: 100%;
     height: 100%;
     border-radius: 10px;
-}
-.portfolio_one:hover {
-    flex-grow: 4.3;
+}*/
+.portfolio_one a:hover {
+    flex-grow: 3;
 }
 /*
 .portfolio_projects img:hover {
@@ -444,17 +443,19 @@ html {
 
 }
 
-@media screen and (max-width: 468px) {
 
-    /* Media Queries for Nav Section*/
+@media screen and (max-width: 468px) {
+    
+    /* Media Queries for Nav Section
     .nav_right {
         padding: 0 16px;
-    }
-
+    }*/
     
+    /*Nav Bar Media Queries*/
+    .nav_right{
+        float:left;
+        }
 
-}
-@media screen and (max-width: 468px) {
     /*Media Queries for about section*/
     .main_text h2 {
         font-size: 32px;
