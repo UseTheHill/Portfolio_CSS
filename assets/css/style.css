@@ -1,74 +1,56 @@
 * {
 
     box-sizing: border-box;
-
     margin: 0;
-
     padding: 0;
-
     font-family: Arial, Helvetica, sans-serif;
-
 }
-
 html {
-
     scroll-behavior: smooth;
-
 }
 
 /*nav bar*/
 
 .nav {
-
-    background: #2e3b48;
-
+    background-color: #2e3b48;
     color: #e5d3c9;
-
+    
 }
 
 .nav_container {
-
-    padding: 60px;
-
-    display: grid;
-
-    grid-template-columns: 1fr 2fr;
-
+    padding:10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    background-color: #2e3b48;
 }
 
 .nav_left {
 
     display: flex;
-
     flex-direction: column;
-
+    
 }
 
 .nav_left p {
-
     line-height: 2;
-
 }
 
 .nav_right {
 
     display: flex;
-
     justify-content: space-around;
-
-    padding: 0 100px;
-
+    padding: 20px;
 }
 
 .nav_right a {
-
     color:#e5d3c9;
-
     text-decoration: none;
-
     text-transform: uppercase;
-
     font-weight: 700;
+    
 
 }
 
@@ -107,19 +89,13 @@ html {
 .main_section {
 
     padding: 60px 60px;
-
-    background: #2e3b48;
-
+    background-color: #2e3b48;
     color: #e5d3c9;
-
 }
 
 .main_container {
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: flex-start;
 
 }
@@ -127,15 +103,13 @@ html {
 .main_container h1 {
 
     font-size: 110px;
-
     color: #e4edee;
-
+    text-align: center;
     -webkit-text-fill-color: transparent;
-
     -webkit-text-stroke-width: 2px;
-
     -webkit-text-stroke-color: #e5d3c9;
-
+    padding-top: 30px;;
+    padding-bottom: 30px;
     margin-bottom: 32px;
 
 }
@@ -262,7 +236,7 @@ html {
 
 .approach {
 
-    background: #2e3b48;
+    background-color: #2e3b48;
 
     color: #2e3b48;
 
@@ -272,7 +246,7 @@ html {
 
 .approach_container {
 
-    background: #e4edee;
+    background-color: #e4edee;
 
     padding-top: 100px;
 
@@ -440,7 +414,7 @@ html {
 
 .portfolio {
 
-    background: #2e3b48;
+    background-color: #2e3b48;
 
     color:#e5d3c9;
 
@@ -542,7 +516,7 @@ html {
 
     left: 20px;
 
-    background-color: #e5d3c9;
+    background-color-color: #e5d3c9;
 
     color: #2e3b48;
 
@@ -568,7 +542,7 @@ html {
 
     left: 20px;
 
-    background-color: #e5d3c9;
+    background-color-color: #e5d3c9;
 
     color: #2e3b48;
 
@@ -678,7 +652,7 @@ html {
 
     align-items: center;
 
-    background: #2e3b48;
+    background-color: #2e3b48;
 
     padding: 100px 0;
 
@@ -686,7 +660,7 @@ html {
 
 .contact_bar {
 
-    background: #e5d3c9;
+    background-color: #e5d3c9;
 
     height: 80px;
 
