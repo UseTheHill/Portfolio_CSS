@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100$
 }
 html {
     scroll-behavior: smooth;
@@ -215,32 +216,6 @@ html {
     font-size: 1.5rem;
 }
 
-/* Approach Media Quieres */
-
-@media screen and (max-width: 768px) {
-
-    .approach_grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-    .approach_container h1 {
-
-        text-align: center;
-
-        margin-bottom: 80px;
-
-    }
-
-}
-
-@media screen and (max-width: 468px) {
-
-    
-
-}
-
 /*portfolio css*/
 
 .portfolio {
@@ -308,7 +283,7 @@ html {
 
     flex-direction: column;
     position: relative;
-    flex: 1 0 50%;
+    width: 100%;
 }
 
 .text-block-workone {
@@ -325,8 +300,7 @@ html {
 .portfolio_two {
 
     position: relative;
-    
-    flex: 1 0 50%;
+    width: 50%;
 }
 
 .portfolio_one:hover {
@@ -595,33 +569,53 @@ html {
 
 /*Contact Media Queries*/
     .contact {
-        display:flex;
+        padding: 0 16px;
+        display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     .contact_bar {
         width: 100%;
-        justify-content: center;
     }
 
     .contact_bar img {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .contact_bar p {
-        margin-right: 16px;
+        display: none;
     }
 
     .contact_bar span {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .contact h1 {
-        margin-left: 0;
-        margin-top: 32px;
-        font-size: 32px;
+        display: none;
     }
 
 }
 
+
+/* Approach Media Quieres */
+
+@media screen and (max-width: 768px) {
+
+    .approach_grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .approach_container h1 {
+
+        text-align: center;
+
+        margin-bottom: 80px;
+
+    }
+
+}
