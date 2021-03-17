@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    width: auto;
+    width: 100$
 }
 html {
     scroll-behavior: smooth;
 }
-
 
 /*nav bar*/
 
@@ -214,9 +213,11 @@ html {
 }
 
 .portfolio_container {
-    padding: 0;
-    margin: 10px, 10px, 10px, 10px;
-    
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .portfolio_container h1 {
@@ -227,20 +228,8 @@ html {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #e5d3c9;
     margin-bottom: 20px;
-    
 }
 
-.card-text-custom {
-    background-color: #2e3b48;
-    color: #e5d3c9;
-}
-
-.card-body-custom {
-    background-color: #2e3b48;
-    color: #e5d3c9;
-    
-}
-/* 
 .portfolio_main {
 
     display: flex;
@@ -328,7 +317,7 @@ html {
 .portfolio_projects img:hover {
     flex-grow: 4;
     box-shadow: 0 0 10rem #e5d3c9;
-} */
+}
 
 
 /*Contact CSS*/
